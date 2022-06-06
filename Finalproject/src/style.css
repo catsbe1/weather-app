@@ -1,0 +1,114 @@
+h1,
+h5,
+h3 {
+  font-family: "Roboto", sans-serif;
+  color: black;
+}
+
+h1,
+h5 {
+  margin-bottom: 0;
+  line-height: 1;
+}
+
+h5 {
+  font-size: 18px;
+}
+h1 {
+  margin-top: 5px;
+}
+h3 {
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.change-city {
+  position: absolute;
+  margin-left: 59%;
+  margin-top: -55px;
+}
+
+.container {
+  width: 80%;
+  border: 2px solid gainsboro;
+  border-radius: 4px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  background: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
+}
+.today-wrap {
+  display: block;
+  margin: 15px auto;
+  width: 80%;
+  font-family: "PT Mono", monospace;
+}
+.extra-info {
+  text-align: right;
+  margin-left: 700px;
+  position: absolute;
+  margin-top: -20px;
+}
+
+.current-city {
+  position: absolute;
+  margin-top: 30px;
+  margin-left: 0px;
+  font-size: 35px;
+}
+.current-temp {
+  position: absolute;
+  font-size: 50px;
+  margin-left: 60px;
+  margin-top: 40px;
+}
+
+.today-icon {
+  position: absolute;
+  font-size: 80px;
+  margin-left: 340px;
+  margin-top: 10px;
+  color: yellow;
+}
+
+.today-description {
+  position: absolute;
+  font-size: 23px;
+  margin-left: 450px;
+  margin-top: 10px;
+}
+.top,
+.middle,
+.bottom {
+  text-align: center;
+  font-family: "PT Mono", monospace;
+}
+
+.middle {
+  font-size: 35px;
+  color: lightskyblue;
+}
+
+.conversions {
+  position: absolute;
+  margin-top: 40px;
+  margin-left: 200px;
+}
+.celcius,
+.fahrenheit {
+  color: black;
+  text-decoration: none;
+}
+
+#home {
+  color: black;
+  background: transparent;
+  border: none;
+  font-size: 20px;
+  position: absolute;
+  margin-left: 55%;
+  margin-top: -55px;
+}
+
+#home:hover {
+  cursor: pointer;
+}
