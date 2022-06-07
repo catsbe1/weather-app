@@ -22,21 +22,6 @@ if (minutes < 10) {
 let currentDay = document.querySelector("h5");
 currentDay.innerHTML = `${day}, ${hour}:${minutes}`;
 
-function convertCelcius() {
-  let currentTemp = document.querySelector(".current-temp");
-  currentTemp.innerHTML = "30°C";
-}
-
-let celciusTemp = document.querySelector(".celcius");
-celciusTemp.addEventListener("click", convertCelcius);
-
-function convertFahrenheit() {
-  let currentTemp = document.querySelector(".current-temp");
-  currentTemp.innerHTML = "50°F";
-}
-let fahrenheitTemp = document.querySelector(".fahrenheit");
-fahrenheitTemp.addEventListener("click", convertFahrenheit);
-
 function changeLocation(event) {
   event.preventDefault();
   let newLocation = document.querySelector("#city");
@@ -60,6 +45,7 @@ searchCity.addEventListener("submit", changeLocation);
 
 function changeTemp(response) {
   let temperature = Math.round(response.data.main.temp);
+  celciusTemperature = temperature;
   let currentTemperature = document.querySelector(".current-temp");
   currentTemperature.innerHTML = `${temperature}°C`;
   let humidity = response.data.main.humidity;
@@ -97,3 +83,23 @@ function getPosition(event) {
 
 let returnHome = document.querySelector("#home");
 returnHome.addEventListener("click", getPosition);
+
+function convertCelcius(event) {
+  event.preventDefault();
+  let currentTemp = document.querySelector(".current-temp");
+  currentTemp.innerHTML = `${celciusTemperature}°C`;
+}
+
+let celciusConversion = document.querySelector(".celcius");
+celciusConversion.addEventListener("click", convertCelcius);
+
+function convertFahrenheit(event) {
+  event.preventDefault();
+  let currentTemp = document.querySelector(".current-temp");
+  let fahrenheitTemperature = Math.round((celciusTemperature * 9) / 5 + 32);
+  currentTemp.innerHTML = `${fahrenheitTemperature}°F `;
+}
+let fahrenheitConversion = document.querySelector(".fahrenheit");
+fahrenheitConversion.addEventListener("click", convertFahrenheit);
+
+let celciusTemperature = null;
