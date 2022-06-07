@@ -76,15 +76,22 @@ h3 {
   margin-left: 450px;
   margin-top: 10px;
 }
-.top,
-.middle,
-.bottom {
-  text-align: center;
+.weather-forecast-date,
+.weather-forecast-temperature-max,
+.weather-forecast-temperature-min {
   font-family: "PT Mono", monospace;
 }
 
+.weather-forecast-temperature-min {
+  opacity: 0.5;
+}
+
+.row {
+  text-align: center;
+}
+
 .forecast-icon {
-  width: 50px;
+  width: 60px;
 }
 
 .conversions {
