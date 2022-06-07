@@ -1,3 +1,7 @@
+body {
+  background-image: url("media/cloud.jpg");
+}
+
 h1,
 h5,
 h3 {
@@ -34,7 +38,12 @@ h3 {
   border-radius: 4px;
   margin-top: 50px;
   margin-bottom: 50px;
-  background: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
+  background: radial-gradient(
+    circle at 10% 20%,
+    rgb(253, 239, 132) 0%,
+    rgb(247, 198, 169) 54.2%,
+    rgb(21, 186, 196) 100.3%
+  );
 }
 .today-wrap {
   display: block;
@@ -92,17 +101,6 @@ h3 {
 
 .forecast-icon {
   width: 60px;
-}
-
-.conversions {
-  position: absolute;
-  margin-top: 40px;
-  margin-left: 200px;
-}
-.celcius,
-.fahrenheit {
-  color: black;
-  text-decoration: none;
 }
 
 #home {

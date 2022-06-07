@@ -131,23 +131,3 @@ function getPosition(event) {
 
 let returnHome = document.querySelector("#home");
 returnHome.addEventListener("click", getPosition);
-
-function convertCelcius(event) {
-  event.preventDefault();
-  let currentTemp = document.querySelector(".current-temp");
-  currentTemp.innerHTML = `${celciusTemperature}°C`;
-}
-
-let celciusConversion = document.querySelector(".celcius");
-celciusConversion.addEventListener("click", convertCelcius);
-
-function convertFahrenheit(event) {
-  event.preventDefault();
-  let currentTemp = document.querySelector(".current-temp");
-  let fahrenheitTemperature = Math.round((celciusTemperature * 9) / 5 + 32);
-  currentTemp.innerHTML = `${fahrenheitTemperature}°F `;
-}
-let fahrenheitConversion = document.querySelector(".fahrenheit");
-fahrenheitConversion.addEventListener("click", convertFahrenheit);
-
-let celciusTemperature = null;
