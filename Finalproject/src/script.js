@@ -75,6 +75,11 @@ function changeTemp(response) {
   description.innerHTML = `${newDescription}`;
   let location = document.querySelector("#location");
   location.innerHTML = response.data.name;
+  let icon = document.querySelector(".icon");
+  icon.setAttribute(
+    "src",
+    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+  );
 }
 
 function showPosition(position) {

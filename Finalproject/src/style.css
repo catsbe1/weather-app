@@ -121,3 +121,10 @@ h3 {
   color: black;
   text-decoration: none;
 }
+
+.icon {
+  position: absolute;
+  margin-left: 340px;
+  margin-top: 10px;
+  width: 75px;
+}
