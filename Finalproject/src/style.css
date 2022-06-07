@@ -112,3 +112,12 @@ h3 {
 #home:hover {
   cursor: pointer;
 }
+.coder {
+  text-align: center;
+  font-family: "PT Mono", monospace;
+}
+
+.repository-link {
+  color: black;
+  text-decoration: none;
+}
